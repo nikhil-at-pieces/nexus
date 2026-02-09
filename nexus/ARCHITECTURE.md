@@ -100,7 +100,7 @@ Relevant paths for running and understanding the system:
 | `nexus/services/` | Run service, campaign service, AI analysis, Slack, Google Sheets, twscrape accounts, etc. |
 | `nexus/models/` | SQLAlchemy models (used by API and worker). |
 | `alembic/` | Database migrations. |
-| `handoff/` | This documentation set. |
+| `nexus/` | This documentation set. |
 | `docker-compose.yml` | Optional full stack (API, worker, scheduler, Postgres, Redis). |
 | `nexus-frontend/` | Optional Next.js frontend (run separately). |
 
@@ -132,4 +132,4 @@ For production-like setups, use environment variables to point to external Postg
 
 ---
 
-*This document is part of the Nexus handoff package.*
+*This document is part of the Nexus documentation.*

@@ -55,7 +55,7 @@ The codebase in this repo is the full application. It is designed to run **local
 
 | File | Purpose |
 |------|--------|
-| `README.md` | Index of handoff docs (this folder). |
+| `README.md` | Index of docs (this folder). |
 | `HANDOFF.md` | This file — overview and handoff notes. |
 | `ARCHITECTURE.md` | High-level components, data flow, project layout. |
 | `SETUP.md` | Environment and dependency setup. |
@@ -73,7 +73,7 @@ This handoff focuses on **system structure, setup, and operations** so you can r
 1. **Python 3.11+** and a virtual environment.
 2. **PostgreSQL** (e.g. 15) — for the main database.
 3. **Redis** — for cache and Celery broker.
-4. **Environment variables** — copy `handoff/env.example` to project root as `.env` and set at least: `NEXUS_SECRET_KEY`, `DATABASE_URL`, `REDIS_URL`, `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`.
+4. **Environment variables** — copy `nexus/env.example` to project root as `.env` and set at least: `NEXUS_SECRET_KEY`, `DATABASE_URL`, `REDIS_URL`, `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND`.
 5. **Database migrations** — run `alembic upgrade head` after first setup (see RUNNING.md).
 
 **Optional:**
@@ -100,7 +100,7 @@ pip install -e .
 docker compose up -d postgres redis
 
 # 4. Copy env and set required variables
-cp handoff/env.example .env
+cp nexus/env.example .env
 # Edit .env: NEXUS_SECRET_KEY (32+ chars), DATABASE_URL, REDIS_URL, CELERY_*
 
 # 5. Run migrations

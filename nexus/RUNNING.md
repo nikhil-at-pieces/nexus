@@ -151,4 +151,4 @@ Use these to confirm the API is up and to explore endpoints.
 
 ---
 
-*This document is part of the Nexus handoff package.*
+*This document is part of the Nexus documentation.*

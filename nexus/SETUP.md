@@ -70,10 +70,10 @@ Install and start Postgres and Redis with your OS package manager. Create a data
 
 ## 4. Environment Variables
 
-Copy the example env file to the **project root** (not inside `handoff/`) and edit it:
+Copy the example env file to the **project root** (not inside `nexus/`) and edit it:
 
 ```bash
-cp handoff/env.example .env
+cp nexus/env.example .env
 ```
 
 Edit `.env` and set at least:
@@ -86,7 +86,7 @@ Edit `.env` and set at least:
 | **CELERY_BROKER_URL** | `redis://localhost:6379/1` | Redis DB for Celery broker. |
 | **CELERY_RESULT_BACKEND** | `redis://localhost:6379/2` | Redis DB for Celery results. |
 
-Other variables in `handoff/env.example` are optional (e.g. `GOOGLE_API_KEY` for AI analysis, Slack/Sheets, Clerk). **Do not commit `.env` or real secrets to the repo.**
+Other variables in `nexus/env.example` are optional (e.g. `GOOGLE_API_KEY` for AI analysis, Slack/Sheets, Clerk). **Do not commit `.env` or real secrets to the repo.**
 
 ---
 
@@ -138,4 +138,4 @@ Configure its env (e.g. `NEXT_PUBLIC_API_URL`, Clerk keys) as needed; see fronte
 
 ---
 
-*This document is part of the Nexus handoff package.*
+*This document is part of the Nexus documentation.*

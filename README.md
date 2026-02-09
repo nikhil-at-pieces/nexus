@@ -2,11 +2,11 @@
 
 This repository contains the **handoff package** for Nexus: a Twitter listening / social listening tool. It is a short reference for setup, architecture, and code patterns — not the full application.
 
-**Start here:** [handoff/README.md](handoff/README.md)
+**Start here:** [nexus/README.md](nexus/README.md)
 
 ## Contents
 
-- **[handoff/](handoff/)** — Documentation and code reference
+- **[nexus/](nexus/)** — Documentation and code reference
   - **HANDOFF.md** — Overview, quick start, checklist
   - **ARCHITECTURE.md** — Components, data flow, project layout
   - **SETUP.md** — Prerequisites, env, migrations

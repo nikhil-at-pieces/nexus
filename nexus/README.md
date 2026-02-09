@@ -1,6 +1,6 @@
-# Nexus — Handoff Documentation
+# Nexus — Documentation
 
-This folder contains the **handoff documentation** for **Nexus**, a **Twitter listening / social listening** tool. Use these docs to understand, set up, and run the system (e.g. locally or on a small server).
+This folder contains the **documentation** for **Nexus**, a **Twitter listening / social listening** tool. Use these docs to understand, set up, and run the system (e.g. locally or on a small server).
 
 ---
 
@@ -34,7 +34,7 @@ git clone https://github.com/nikhil-at-pieces/nexus.git && cd nexus
 python3.11 -m venv .venv && source .venv/bin/activate
 pip install -e .
 docker compose up -d postgres redis
-cp handoff/env.example .env   # then edit .env
+cp nexus/env.example .env   # then edit .env
 alembic upgrade head
 nexus run --host 0.0.0.0 --port 8000   # terminal 1
 nexus worker                            # terminal 2
